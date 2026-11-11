@@ -32,7 +32,7 @@ jobs:
           pip install -e ".[dev]"
       
       - name: Verify dependencies
-        run: echo "Installation works"
+        run: encoder --help
 
       - name: Run tests
         run: python -m unittest
